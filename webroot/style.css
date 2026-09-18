@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #111827;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #6b7280;
+    font-size: 19px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+}
+
+.page-title p {
+    color: #6b7280;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #6b7280;
+}
+
+.status {
+    margin-top: 40px;
+    padding: 25px;
+    background: #ecfdf5;
+    border-left: 5px solid #10b981;
+    border-radius: 8px;
+}
+
+.status strong {
+    color: #047857;
+}
+
+.footer {
+    margin-top: 80px;
+    padding: 25px;
+    text-align: center;
+    background: #111827;
+    color: #9ca3af;
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}

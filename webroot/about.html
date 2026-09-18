@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Java HTTP Server</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Java HTTP Server</div>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <div class="page-title">
+            <h1>About the Project</h1>
+            <p>A web server implemented from scratch in Java</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Technology</h2>
+                <p>
+                    Built using Java, ServerSocket, Socket,
+                    input/output streams and Java NIO file APIs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Architecture</h2>
+                <p>
+                    The server accepts incoming connections,
+                    processes HTTP requests and sends HTTP responses
+                    using a dedicated worker thread.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Security</h2>
+                <p>
+                    The server validates requested paths and
+                    prevents directory traversal outside the
+                    webroot directory.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="status">
+            <strong>HTTP Support</strong>
+            <p>
+                The server currently supports HTTP GET requests
+                and HTTP/1.0 and HTTP/1.1 request formats.
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        Java HTTP Web Server • Built with Java
+    </footer>
+
+</body>
+</html>
